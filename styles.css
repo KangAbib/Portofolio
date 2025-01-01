@@ -211,9 +211,12 @@ a {
 .project-5 {
   background-image: url("img/Project5.jpg");
 }
+.project-6 {
+  background-image: url("img/Project6.png");
+}
 
 
-.project-1, .project-2, .project-3, .project-4, .project-5 {
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
   background-size: contain; /* Gambar akan terlihat penuh dan tetap proporsional */
   background-position: center; /* Menempatkan gambar di tengah */
   background-repeat: no-repeat; /* Tidak mengulangi gambar */
