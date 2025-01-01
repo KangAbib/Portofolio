@@ -116,7 +116,7 @@ a {
   scale: 1.1;
 }
 .about-img:nth-child(3) {
-  background-image: url("img/Gambar3.jpg");
+  background-image: url("img/Gambar5.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -195,18 +195,37 @@ a {
 .photo-4 {
   background-image: url("img/Sertifikat4.jpg");
 }
-.photo-5 {
-  background-image: url("img/Sertifikat2.jpg");
+
+.project-1 {
+  background-image: url("img/Project1.png");
 }
-.photo-6 {
-  background-image: url("img/Sertifikat1.jpg");
+.project-2 {
+  background-image: url("img/Project2.png");
 }
-.photo-7 {
-  background-image: url("img/Sertifikat3.jpg");
+.project-3 {
+  background-image: url("img/Project3.png");
 }
-.photo-8 {
-  background-image: url("img/Sertifikat2.jpg");
+.project-4 {
+  background-image: url("img/Project4.jpg");
 }
+.project-5 {
+  background-image: url("img/Project5.jpg");
+}
+
+
+.project-1, .project-2, .project-3, .project-4, .project-5 {
+  background-size: contain; /* Gambar akan terlihat penuh dan tetap proporsional */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulangi gambar */
+  width: 100%; /* Lebar penuh */
+  aspect-ratio: 16 / 9; /* Rasio aspek untuk menjaga proporsi */
+  border-radius: 10px; /* Sudut melengkung */
+  overflow: hidden; /* Memastikan gambar tidak melampaui elemen */
+}
+
+
+
+
 
 .title-photo {
   width: 100%;
