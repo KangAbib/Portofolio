@@ -196,6 +196,11 @@ a {
   background-image: url("img/Sertifikat4.jpg");
 }
 
+.photo-5 {
+  background-image: url("img/Sertifikat6.jpg");
+}
+
+
 .project-1 {
   background-image: url("img/Project1.png");
 }
@@ -320,11 +325,11 @@ br {
     background-color: #ddd;
   }
   30% {
-    width: 80%;
+    width: 50%;
     background-color: #3498db;
   }
   100% {
-    width: 80%;
+    width: 50%;
     background-color: #ddd;
   }
 }
@@ -334,11 +339,11 @@ br {
     background-color: #ddd;
   }
   30% {
-    width: 90%;
+    width: 75%;
     background-color: #3498db;
   }
   100% {
-    width: 90%;
+    width: 75%;
     background-color: #ddd;
   }
 }
@@ -362,11 +367,11 @@ br {
     background-color: #ddd;
   }
   30% {
-    width: 65%;
+    width: 80%;
     background-color: #3498db;
   }
   100% {
-    width: 65%;
+    width: 80%;
     background-color: #ddd;
   }
 }
