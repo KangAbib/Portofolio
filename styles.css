@@ -2,14 +2,17 @@
   padding: 0px;
   margin: 0px;
 }
+
 body {
   background-color: rgba(213, 213, 213, 0.28);
   overflow-x: hidden;
 }
+
 h1,
 a {
   font-family: "Poppins", sans-serif;
 }
+
 .navbar {
   background-color: white !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -17,6 +20,7 @@ a {
   width: 100% !important;
   z-index: 12;
 }
+
 .home__blob {
   fill: #3e6ff4;
 }
@@ -28,6 +32,7 @@ a {
   top: 20%;
   animation: visible 4s ease-in-out infinite;
 }
+
 .home__blob-img {
   width: 540px;
 }
@@ -35,6 +40,7 @@ a {
 .home__img {
   width: 540px;
 }
+
 .down {
   display: flex;
   justify-content: center;
@@ -43,6 +49,7 @@ a {
 .icon-down {
   animation: moveUpDown 2s ease-in-out infinite;
 }
+
 .change-color {
   animation: changeColor 2s ease-in-out infinite;
 }
@@ -53,21 +60,25 @@ a {
   /* margin: 0 auto; */
   animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
 }
+
 .button-contact {
   background-color: #3e6ff4;
   color: white;
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .button-contact:hover {
   background-color: white;
   border: solid 1px #3e6ff4;
   color: black;
 }
+
 .icon-sosmed {
   transition: 2s ease;
   cursor: pointer;
 }
+
 .icon-sosmed:hover {
   position: relative;
   bottom: 10px;
@@ -78,12 +89,15 @@ a {
   width: 100%;
   text-align: center;
 }
+
 .about p {
   font-size: 20px;
 }
+
 .about h4 {
   margin-right: 30px;
 }
+
 .about-img {
   margin-right: 10px;
   cursor: pointer;
@@ -103,27 +117,33 @@ a {
   background-position: center;
   background-size: cover;
 }
+
 .about-img:hover:nth-child(1) {
   scale: 1.1;
   rotate: 5deg;
 }
+
 .about-img:nth-child(2) {
   background-image: url("img/Gambar4.jpg");
   background-position: center;
   background-size: cover;
 }
+
 .about-img:hover:nth-child(2) {
   scale: 1.1;
 }
+
 .about-img:nth-child(3) {
   background-image: url("img/Gambar5.jpg");
   background-position: center;
   background-size: cover;
 }
+
 .about-img:hover:nth-child(3) {
   scale: 1.1;
   rotate: -5deg;
 }
+
 .line {
   width: 100%;
   height: 2px;
@@ -131,15 +151,19 @@ a {
   background-color: rgba(213, 213, 213, 0.8);
   margin-bottom: 20px;
 }
+
 .carousel-control-next {
   color: black;
 }
+
 .carousel-control-next:hover {
   color: black;
 }
+
 .carousel-control-prev {
   color: black;
 }
+
 .carousel-control-prev:hover {
   color: black;
 }
@@ -158,25 +182,32 @@ a {
   background-color: #3498db;
   position: absolute;
 }
+
 .progress-1 {
   animation: progress-1 4s linear infinite;
 }
+
 .progress-2 {
   animation: progress-2 4s linear infinite;
 }
+
 .progress-3 {
   animation: progress-3 4s linear infinite;
 }
+
 .progress-4 {
   animation: progress-4 4s linear infinite;
 }
 
 .gallery-photo {
-  width: 300px; /* lebar tetap 300px, atau sesuaikan sesuai kebutuhan */
-  height: 200px; /* dihitung dari 300 / (16/9) */
+  width: 300px;
+  /* lebar tetap 300px, atau sesuaikan sesuai kebutuhan */
+  height: 200px;
+  /* dihitung dari 300 / (16/9) */
   border-radius: 10px;
   background-position: center;
-  background-size: cover; /* cover memastikan gambar mengisi penuh area, tapi mungkin terpotong */
+  background-size: cover;
+  /* cover memastikan gambar mengisi penuh area, tapi mungkin terpotong */
   margin: 5px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -186,12 +217,15 @@ a {
 .photo-1 {
   background-image: url("img/Sertifikat1.jpg");
 }
+
 .photo-2 {
   background-image: url("img/Sertifikat2.jpg");
 }
+
 .photo-3 {
   background-image: url("img/Sertifikat3.jpg");
 }
+
 .photo-4 {
   background-image: url("img/Sertifikat4.jpg");
 }
@@ -204,21 +238,27 @@ a {
 .project-1 {
   background-image: url("img/Project1.png");
 }
+
 .project-2 {
   background-image: url("img/Project2.png");
 }
+
 .project-3 {
   background-image: url("img/Project3.png");
 }
+
 .project-4 {
   background-image: url("img/Project4.jpg");
 }
+
 .project-5 {
   background-image: url("img/Project5.jpg");
 }
+
 .project-6 {
   background-image: url("img/Project6.png");
 }
+
 .project-7 {
   background-image: url("img/Project7.jpg");
 }
@@ -228,14 +268,54 @@ a {
 }
 
 
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8 {
-  background-size: contain; /* Gambar akan terlihat penuh dan tetap proporsional */
-  background-position: center; /* Menempatkan gambar di tengah */
-  background-repeat: no-repeat; /* Tidak mengulangi gambar */
-  width: 100%; /* Lebar penuh */
-  aspect-ratio: 16 / 9; /* Rasio aspek untuk menjaga proporsi */
-  border-radius: 10px; /* Sudut melengkung */
-  overflow: hidden; /* Memastikan gambar tidak melampaui elemen */
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6,
+.project-7,
+.project-8 {
+  background-size: contain;
+  /* Gambar akan terlihat penuh dan tetap proporsional */
+  background-position: center;
+  /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat;
+  /* Tidak mengulangi gambar */
+  width: 100%;
+  /* Lebar penuh */
+  aspect-ratio: 16 / 9;
+  /* Rasio aspek untuk menjaga proporsi */
+  border-radius: 10px;
+  /* Sudut melengkung */
+  overflow: hidden;
+  /* Memastikan gambar tidak melampaui elemen */
+}
+
+.freelance-1 {
+  background-image: url("img/Freelance1.jpeg");
+}
+
+.freelance-2 {
+  background-image: url("img/freelance2.jpeg");
+}
+
+.freelance-1,
+.freelance-2 {
+  background-size: contain;
+  /* Gambar akan terlihat penuh dan tetap proporsional */
+  background-position: center;
+  /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat;
+  /* Tidak mengulangi gambar */
+  width: 100%;
+  /* Lebar penuh */
+  aspect-ratio: 16 / 9;
+  /* Rasio aspek untuk menjaga proporsi */
+  border-radius: 10px;
+  /* Sudut melengkung */
+  overflow: hidden;
+  /* Memastikan gambar tidak melampaui elemen */
 }
 
 
@@ -254,9 +334,11 @@ a {
   opacity: 0;
   transition: 0.6s;
 }
+
 .title-photo:hover {
   opacity: 1;
 }
+
 .title-photo p {
   margin: 0px;
 }
@@ -307,95 +389,119 @@ br {
   background-color: #3e6ff4;
   color: white;
 }
+
 .footer-row {
   width: 100%;
   height: 250px;
   background-color: #3e6ff4;
 }
+
 .footer a {
   color: white;
   text-decoration: none;
   margin-right: 15px;
 }
+
 .footer-card {
   padding-top: 20px;
   width: 100%;
   color: white;
   font-size: 25px;
 }
+
 @keyframes progress-1 {
   0% {
     width: 0;
     background-color: #ddd;
   }
+
   30% {
     width: 50%;
     background-color: #3498db;
   }
+
   100% {
     width: 50%;
     background-color: #ddd;
   }
 }
+
 @keyframes progress-2 {
   0% {
     width: 0;
     background-color: #ddd;
   }
+
   30% {
     width: 75%;
     background-color: #3498db;
   }
+
   100% {
     width: 75%;
     background-color: #ddd;
   }
 }
+
 @keyframes progress-3 {
   0% {
     width: 0;
     background-color: #ddd;
   }
+
   30% {
     width: 70%;
     background-color: #3498db;
   }
+
   100% {
     width: 70%;
     background-color: #ddd;
   }
 }
+
 @keyframes progress-4 {
   0% {
     width: 0;
     background-color: #ddd;
   }
+
   30% {
     width: 80%;
     background-color: #3498db;
   }
+
   100% {
     width: 80%;
     background-color: #ddd;
   }
 }
+
 @keyframes moveUpDown {
+
   0%,
   100% {
-    transform: translateY(0); /* Elemen berada di posisi awal */
+    transform: translateY(0);
+    /* Elemen berada di posisi awal */
   }
+
   50% {
-    transform: translateY(-20px); /* Elemen bergerak ke atas */
+    transform: translateY(-20px);
+    /* Elemen bergerak ke atas */
   }
 }
 
 @keyframes changeColor {
+
   0%,
   100% {
-    color: #3e6ff4; /* Elemen berada di posisi awal */
+    color: #3e6ff4;
+    /* Elemen berada di posisi awal */
   }
+
   100% {
-    color: blue; /* Elemen berada di posisi awal */
+    color: blue;
+    /* Elemen berada di posisi awal */
   }
 }
 
@@ -403,15 +509,19 @@ br {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
+
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #000;
   }
@@ -419,13 +529,18 @@ br {
 
 @keyframes visible {
   0% {
-    opacity: 0; /* Mulai dari 0 derajat rotasi */
+    opacity: 0;
+    /* Mulai dari 0 derajat rotasi */
   }
+
   50% {
-    opacity: 0.5; /* Mulai dari 0 derajat rotasi */
+    opacity: 0.5;
+    /* Mulai dari 0 derajat rotasi */
   }
+
   100% {
-    opacity: 0; /* Mulai dari 0 derajat rotasi */
+    opacity: 0;
+    /* Mulai dari 0 derajat rotasi */
   }
 }
 
@@ -435,22 +550,27 @@ br {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 520px) {
   .header h1 {
     font-size: 22px;
   }
 }
+
 @media (max-width: 420px) {
   .header h1 {
     font-size: 17px;
   }
+
   .kotak {
     width: 150px;
     top: 35%;
   }
+
   .about h4 {
     font-size: 17px;
   }
+
   .about p {
     font-size: 14px;
   }
