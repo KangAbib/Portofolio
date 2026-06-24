@@ -9,193 +9,175 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <!-- Hotjar Tracking Code for my site -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 3810438, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    gi</script>
 </head>
 
 <body>
-  <style>
-    p {
-      background-position: center;
-    }
-  </style>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><b>Ahmad Khabib Balloh</b></a>
+      <a class="navbar-brand logo" href="#home">
+        <span class="logo-bracket"><</span>Khabib<span class="logo-bracket"> /></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#file">File</a>
-          </li>
-
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#freelance">Freelance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#file">File</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="container pb-5 pt-5 header" id="home">
-    <div class="row d-flex" style="height: 80vh">
-      <div class="col-6 m-auto">
-        <h1>HI</h1>
-        <h1>
-          I'm <b class="change-color" style="color: #3e6ff4">Khabib</b>
-        </h1>
-        <h1 class="">
-          Fullstack <br />
-          <div class="typing">Web & Android Dev</div>
-        </h1>
-        <a href="https://wa.me/6287761666080" class="btn button-contact" style="margin-bottom: 100px">
-          Contact
-        </a>
-        <div class="d-flex">
-          <a style="color: black" href="https://www.tiktok.com/@akb_1903?_t=8lJfAJEke5g&_r=1"><i
-              class="icon-sosmed fa-brands fa-tiktok fa-2x me-4"></i></a>
-          <a style="color: black" href="https://www.instagram.com/kang_abib_/profilecard/?igsh=MXRwZ3ByeGtjM2wwbg==">
-            <i class="icon-sosmed fa-brands fa-instagram fa-2x me-4"></i></a>
+  <!-- HERO -->
+  <header class="hero-section" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center" style="min-height: 100vh">
+        <div class="col-lg-6 hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">
+            Ahmad Khabib <span class="accent">Balloh</span>
+          </h1>
+          <h2 class="hero-role">
+            Fullstack <span class="typing-wrapper"><span class="typing-text" id="typingText"></span><span
+                class="cursor">|</span></span>
+          </h2>
+          <p class="hero-desc">Passionate about building modern web applications and mobile experiences. Turning ideas
+            into impactful digital products.</p>
+          <div class="hero-actions">
+            <a href="https://wa.me/6287761666080" class="btn btn-primary-cta">
+              <i class="fa-brands fa-whatsapp me-2"></i> Let's Talk
+            </a>
+            <a href="#project" class="btn btn-outline-cta">View Projects</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.tiktok.com/@akb_1903" target="_blank" aria-label="TikTok"><i
+                class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/kang_abib_/" target="_blank" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="col-6 m-auto d-flex justify-content-end">
-        <img src="img/kotakkotak.png" class="kotak" alt="" />
-        <div class="home__img">
-          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-              <image class="home__blob-img" x="-20" y="60" width="540" href="img/profil2.png" />
-            </g>
-          </svg>
+        <div class="col-lg-6 hero-visual d-none d-lg-flex justify-content-center">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-ring"></div>
+            <svg class="hero-blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path class="blob-path"
+                  d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                <image class="hero-blob-img" x="-20" y="60" width="540" href="img/profil2.png" />
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-    <div class="down">
-      <i class="icon-down fa-solid fa-angles-down fa-2x"></i>
-    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+    </a>
   </header>
 
   <main>
-    <section id="about" class="about container pt-4 pb-5" style="margin-bottom: 40px">
-      <h3 class="center" style="color: #3e6ff4">About</h3>
-      <div class="row biodata-wrap">
-        <div class="col-lg-6 d-flex justify-content-center">
-          <div class="row m-auto d-flex justify-content-center">
-            <div class="col-4 about-img"></div>
-            <div class="col-4 about-img"></div>
-            <div class="col-4 about-img"></div>
-          </div>
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
         </div>
-        <div class="col-lg-6 p-sm-3" style="padding-top: 50px">
-          <div class="">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <h4 class="center mb-4">Personal Info</h4>
-                  <div style="margin-bottom: 20px">
-                    <div class="biodata d-flex">
-                      <h4>Name :</h4>
-                      <p>Ahmad Khabib Balloh</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="biodata d-flex">
-                      <h4>Address :</h4>
-                      <p>Jl Sastrorini, Ds. Purwokerto Kec. Ngadiluwih</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="biodata d-flex">
-                      <h4>Study Program :</h4>
-                      <p>D3 Information Management</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="biodata d-flex">
-                      <h4>Campus :</h4>
-                      <p>PSDKU Politeknik Negeri Malang</p>
-                    </div>
-                    <div class="line"></div>
-                    <div class="biodata d-flex">
-                      <h4>Phone :</h4>
-                      <p>+62 877-6166-6080</p>
-                    </div>
-                    <div class="line"></div>
-                  </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-photos">
+              <div class="about-photo-card photo-card-1">
+                <div class="about-img" style="background-image: url('img/Gambar1.jpg')"></div>
+              </div>
+              <div class="about-photo-card photo-card-2">
+                <div class="about-img" style="background-image: url('img/Gambar4.jpg')"></div>
+              </div>
+              <div class="about-photo-card photo-card-3">
+                <div class="about-img" style="background-image: url('img/Gambar5.jpg')"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-tabs">
+              <button class="about-tab active" data-tab="info">Personal Info</button>
+              <button class="about-tab" data-tab="skills">Skills</button>
+            </div>
+
+            <!-- Tab: Personal Info -->
+            <div class="about-tab-content active" id="tab-info">
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label"><i class="fa-solid fa-user me-2"></i> Name</span>
+                  <span class="info-value">Ahmad Khabib Balloh</span>
                 </div>
-                <div class="carousel-item">
-                  <h4 class="center mb-4">Skills</h4>
-                  <div style="height: 42vh">
-                    <div class="biodata d-flex">
-                      <h4>
-                        <i class="fa-solid fa-globe me-3 fa-2"></i> UI UX
-                      </h4>
-                    </div>
-                    <div class="loading-bar">
-                      <div class="progress progress-1" id="progress"></div>
-                    </div>
-                    <div class="biodata d-flex">
-                      <h4>
-                        <i class="fa-brands fa-html5 me-3 fa-2"></i> Web Developer
-                      </h4>
-                    </div>
-                    <div class="loading-bar">
-                      <div class="progress progress-2" id="progress"></div>
-                    </div>
-                    <div class="biodata d-flex">
-                      <h4>
-                        <i class="fa-solid fa-mobile me-3 fa-2"></i> Mobile Developer
-                      </h4>
-                    </div>
-                    <div class="loading-bar">
-                      <div class="progress progress-4" id="progress"></div>
-                    </div>
-                  </div>
+                <div class="info-item">
+                  <span class="info-label"><i class="fa-solid fa-location-dot me-2"></i> Address</span>
+                  <span class="info-value">Jl Sastrorini, Ds. Purwokerto Kec. Ngadiluwih</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label"><i class="fa-solid fa-graduation-cap me-2"></i> Study Program</span>
+                  <span class="info-value">D3 Information Management</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label"><i class="fa-solid fa-building-columns me-2"></i> Campus</span>
+                  <span class="info-value">PSDKU Politeknik Negeri Malang</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label"><i class="fa-solid fa-phone me-2"></i> Phone</span>
+                  <span class="info-value">+62 877-6166-6080</span>
                 </div>
               </div>
+            </div>
 
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span aria-hidden="true"><i class="fa-solid fa-angle-left fa-2x"></i>
-                </span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span aria-hidden="true"><i class="fa-solid fa-angle-right fa-2x"></i></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
+            <!-- Tab: Skills -->
+            <div class="about-tab-content" id="tab-skills">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span><i class="fa-solid fa-palette me-2"></i> UI/UX Design</span>
+                  <span>50%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span><i class="fa-brands fa-html5 me-2"></i> Web Developer</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span><i class="fa-solid fa-mobile-screen me-2"></i> Mobile Developer</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -203,261 +185,295 @@
     </section>
 
     <!-- GALLERY -->
-    <section id="gallery" class="container pt-4 pb-5">
-      <h3 class="center mb-5" style="color: #3e6ff4">Gallery</h3>
-      <div class="row mb-3">
-        <div class="col-md-3 d-flex mb-3">
-          <div class="gallery-photo m-auto photo-1">
-            <div class="title-photo">
-              <p><b>Bootcamp</b></p>
-              <p>First certificate</p>
-            </div>
-          </div>
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Achievements</span>
+          <h2 class="section-title">Gallery</h2>
+          <div class="section-line"></div>
         </div>
-
-        <div class="col-md-3 d-flex mb-3">
-          <div class="gallery-photo m-auto photo-2">
-            <div class="title-photo">
-              <p><b>Bootcamp</b></p>
-              <p>Second certificate</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 d-flex mb-3">
-          <div class="gallery-photo m-auto photo-3">
-            <div class="title-photo">
-              <p><b>Bootcamp</b></p>
-              <p>Third certificate</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 d-flex mb-3">
-          <div class="gallery-photo m-auto photo-4">
-            <div class="title-photo">
-              <p><b>Internship</b></p>
-              <p>Fourth certificate</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 d-flex mb-3">
-          <div class="gallery-photo m-auto photo-5">
-            <div class="title-photo">
-              <p><b>Olympiad 2020</b></p>
-              <p>Fifth certificate</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Belajar -->
-        <section id="project" class="container pt-4 pb-5">
-          <h3 class="center mb-5">
-            <a href="#projects" style="color: #3e6ff4; text-decoration: none;">Learning Projects</a>
-          </h3>
-          <div class="row mb-3">
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://kangabib.github.io/undangan_pernikahan/" target="_blank"
-                class="gallery-photo m-auto project-1">
-                <div class="title-photo">
-                  <p><b>Wedding Invitation</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/DEQ6IBEzi-g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank" class="gallery-photo m-auto project-2">
-                <div class="title-photo">
-                  <p><b>Inventory Mobile</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/C-Br23pTDz8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank" class="gallery-photo m-auto project-3">
-                <div class="title-photo">
-                  <p><b>LPKS ZIHO</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/C5xyfckr1nE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank" class="gallery-photo m-auto project-4">
-                <div class="title-photo">
-                  <p><b>Inventory Website</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/C9Nyk9zTLj7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                target="_blank" class="gallery-photo m-auto project-5">
-                <div class="title-photo">
-                  <p><b>Letter Archive</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a target="_blank" class="gallery-photo m-auto project-6">
-                <div class="title-photo">
-                  <p><b>Inventory of Goods and Rooms</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/DHDCtfPTWcd/?igsh=MTQ0d3ZnNWIyZnI3cA==" target="_blank"
-                class="gallery-photo m-auto project-7">
-                <div class="title-photo">
-                  <p><b>Interior Calculation App</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/DFFMBE4pCIV/?igsh=OWlzZmt3ZzhxdXB2" target="_blank"
-                class="gallery-photo m-auto project-8">
-                <div class="title-photo">
-                  <p><b>Pet App</b></p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- Project Freelance -->
-        <section id="freelance" class="container pt-4 pb-5">
-          <h3 class="center mb-5">
-            <a href="#freelance" style="color: #3e6ff4; text-decoration: none;">Project Freelance</a>
-          </h3>
-          <div class="row mb-3">
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/DSG3uJ4iQu-Atv4Vnpv-lMnx0Kjb1hC_zH-Uw00/?igsh=MXkwdm00ajg5Y3Mybg=="
-                target="_blank" class="gallery-photo m-auto freelance-1">
-                <div class="title-photo">
-                  <p><b>Posyandu</b></p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-4 d-flex mb-3">
-              <a href="https://www.instagram.com/p/DVoC-EtiS-e/?igsh=MXV4NHRjd3l5cmZrcA==" target="_blank"
-                class="gallery-photo m-auto freelance-2">
-                <div class="title-photo">
-                  <p><b>Pengajuan KP</b></p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-
-
-
-
-        <section id="file" class="container mt-4 mb-5">
-          <h3 class="mb-4 center" style="color: #3e6ff4">Upload PDF File</h3>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Curriculum vitae
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  This is my CV as a fullstack web developer. I have been
-                  interested in coding since I started college and I want to
-                  deepen my knowledge.
-                </div>
-
-                <object data="file/cv.pdf" class="center pdf" type=""></object>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Mobile Programming
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is
-                  hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth
-                  noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-
-                <object data="file/mobprog.pdf" class="center pdf" type=""></object>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Practicum
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is
-                  hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth
-                  noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-
-                <object data="file/praktikum.pdf" class="center pdf" type=""></object>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+            <div class="gallery-card">
+              <div class="gallery-photo photo-1"></div>
+              <div class="gallery-overlay">
+                <span class="gallery-tag-label">Bootcamp</span>
+                <h5>First Certificate</h5>
               </div>
             </div>
           </div>
-        </section>
-
-        <div class="down mb-5">
-          <i class="icon-down fa-solid fa-angles-up fa-2x"></i>
-        </div>
-  </main>
-
-  <footer class="footer mt-5 container-fluid d-flex justify-content-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 pt-4 d-flex justify-content-center">
-          <h4><b>Ahmad Khabib Balloh</b></h4>
-        </div>
-        <div class="col-md-4 pt-4 d-flex justify-content-center">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#file">File</a>
-        </div>
-        <div class="col-md-4 pt-4 d-flex justify-content-center">
-          <a href="https://www.tiktok.com/@akb_1903?_t=8lJfAJEke5g&_r=1"><i
-              class="fa-brands fa-tiktok fa-2x me-4"></i></a>
-          <a href="hhttps://www.instagram.com/kang_abib_/profilecard/?igsh=MXRwZ3ByeGtjM2wwbg==">
-            <i class="fa-brands fa-instagram fa-2x me-4"></i></a>
+          <div class="col-sm-6 col-lg-4">
+            <div class="gallery-card">
+              <div class="gallery-photo photo-2"></div>
+              <div class="gallery-overlay">
+                <span class="gallery-tag-label">Bootcamp</span>
+                <h5>Second Certificate</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="gallery-card">
+              <div class="gallery-photo photo-3"></div>
+              <div class="gallery-overlay">
+                <span class="gallery-tag-label">Bootcamp</span>
+                <h5>Third Certificate</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="gallery-card">
+              <div class="gallery-photo photo-4"></div>
+              <div class="gallery-overlay">
+                <span class="gallery-tag-label">Internship</span>
+                <h5>Fourth Certificate</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="gallery-card">
+              <div class="gallery-photo photo-5"></div>
+              <div class="gallery-overlay">
+                <span class="gallery-tag-label">Olympiad 2020</span>
+                <h5>Fifth Certificate</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="center mt-5">
-        <p>khabibballoh19@gmail.com</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="project" class="section project-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Learning Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <a href="https://kangabib.github.io/undangan_pernikahan/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-1"></div>
+                <div class="project-info">
+                  <span class="project-badge">Web</span>
+                  <h5>Wedding Invitation</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/DEQ6IBEzi-g/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-2"></div>
+                <div class="project-info">
+                  <span class="project-badge">Mobile</span>
+                  <h5>Inventory Mobile</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/C-Br23pTDz8/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-3"></div>
+                <div class="project-info">
+                  <span class="project-badge">Web</span>
+                  <h5>LPKS ZIHO</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/C5xyfckr1nE/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-4"></div>
+                <div class="project-info">
+                  <span class="project-badge">Web</span>
+                  <h5>Inventory Website</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/C9Nyk9zTLj7/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-5"></div>
+                <div class="project-info">
+                  <span class="project-badge">Web</span>
+                  <h5>Letter Archive</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="project-thumb project-6"></div>
+              <div class="project-info">
+                <span class="project-badge">Web</span>
+                <h5>Inventory of Goods and Rooms</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/DHDCtfPTWcd/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-7"></div>
+                <div class="project-info">
+                  <span class="project-badge">Mobile</span>
+                  <h5>Interior Calculation App</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="https://www.instagram.com/p/DFFMBE4pCIV/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb project-8"></div>
+                <div class="project-info">
+                  <span class="project-badge">Mobile</span>
+                  <h5>Pet App</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREELANCE -->
+    <section id="freelance" class="section freelance-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Client Work</span>
+          <h2 class="section-title">Project Freelance</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a href="https://www.instagram.com/p/DSG3uJ4iQu-Atv4Vnpv-lMnx0Kjb1hC_zH-Uw00/" target="_blank"
+              class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb freelance-1"></div>
+                <div class="project-info">
+                  <span class="project-badge freelance-badge">Freelance</span>
+                  <h5>Posyandu</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="https://www.instagram.com/p/DVoC-EtiS-e/" target="_blank" class="project-card-link">
+              <div class="project-card">
+                <div class="project-thumb freelance-2"></div>
+                <div class="project-info">
+                  <span class="project-badge freelance-badge">Freelance</span>
+                  <h5>Pengajuan KP</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILES -->
+    <section id="file" class="section file-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Documents</span>
+          <h2 class="section-title">My Files</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="file-card" data-bs-toggle="collapse" data-bs-target="#cvCollapse" aria-expanded="false">
+              <div class="file-icon">
+                <i class="fa-solid fa-file-pdf"></i>
+              </div>
+              <h5>Curriculum Vitae</h5>
+              <p>My CV as a fullstack web developer. I've been interested in coding since college and want to deepen
+                my knowledge.</p>
+              <span class="file-action"><i class="fa-solid fa-arrow-down me-1"></i> View Document</span>
+            </div>
+            <div class="collapse" id="cvCollapse">
+              <div class="file-viewer">
+                <object data="file/cv.pdf" type="application/pdf" class="pdf-embed"></object>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="file-card" data-bs-toggle="collapse" data-bs-target="#mobprogCollapse" aria-expanded="false">
+              <div class="file-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h5>Mobile Programming</h5>
+              <p>Documentation and assignments from the Mobile Programming course during my studies.</p>
+              <span class="file-action"><i class="fa-solid fa-arrow-down me-1"></i> View Document</span>
+            </div>
+            <div class="collapse" id="mobprogCollapse">
+              <div class="file-viewer">
+                <object data="file/mobprog.pdf" type="application/pdf" class="pdf-embed"></object>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="file-card" data-bs-toggle="collapse" data-bs-target="#praktikumCollapse" aria-expanded="false">
+              <div class="file-icon">
+                <i class="fa-solid fa-flask"></i>
+              </div>
+              <h5>Practicum</h5>
+              <p>Lab work and practicum reports from various courses during my academic journey.</p>
+              <span class="file-action"><i class="fa-solid fa-arrow-down me-1"></i> View Document</span>
+            </div>
+            <div class="collapse" id="praktikumCollapse">
+              <div class="file-viewer">
+                <object data="file/praktikum.pdf" type="application/pdf" class="pdf-embed"></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <h4><span class="logo-bracket"><</span>Khabib<span class="logo-bracket"> /></span></h4>
+              <p>Fullstack Web & Android Developer passionate about creating modern digital experiences.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="footer-heading">Quick Links</h5>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#project">Projects</a>
+              <a href="#file">Files</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="footer-heading">Connect</h5>
+            <div class="footer-socials">
+              <a href="https://www.tiktok.com/@akb_1903" target="_blank" aria-label="TikTok"><i
+                  class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/kang_abib_/" target="_blank" aria-label="Instagram"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/6287761666080" target="_blank" aria-label="WhatsApp"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="footer-email"><i class="fa-solid fa-envelope me-2"></i>khabibballoh19@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahmad Khabib Balloh. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -465,7 +481,79 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <script>
+    // Typing effect
+    const roles = ['Web Developer', 'Android Developer', 'Fullstack Dev', 'UI/UX Designer'];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingEl = document.getElementById('typingText');
 
+    function typeRole() {
+      const current = roles[roleIndex];
+      if (isDeleting) {
+        typingEl.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typingEl.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      let speed = isDeleting ? 50 : 100;
+      if (!isDeleting && charIndex === current.length) {
+        speed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 500;
+      }
+      setTimeout(typeRole, speed);
+    }
+    typeRole();
+
+    // About tabs
+    document.querySelectorAll('.about-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.about-tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Skill bar animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-progress').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('#tab-skills').forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
