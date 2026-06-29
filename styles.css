@@ -753,9 +753,11 @@ a:hover {
 
 .freelance-1 { background-image: url("img/Freelance1.jpeg"); }
 .freelance-2 { background-image: url("img/Freelance2.jpeg"); }
+.freelance-3 { background-image: url("img/freelance3.jpeg"); }
 
 .project-thumb.freelance-1,
-.project-thumb.freelance-2 {
+.project-thumb.freelance-2,
+.project-thumb.freelance-3 {
   background-size: contain;
   background-color: var(--dark-2);
 }
