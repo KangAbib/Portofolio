@@ -1458,6 +1458,35 @@ a:hover {
 }
 
 /* ========================================
+   LANGUAGE SWITCHER
+   ======================================== */
+.btn-lang-toggle {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.btn-lang-toggle:hover {
+  background: rgba(108, 92, 231, 0.15);
+  border-color: rgba(108, 92, 231, 0.4);
+  color: var(--primary-light);
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.15);
+}
+
+.btn-lang-toggle i {
+  font-size: 0.85rem;
+}
+
+/* ========================================
    REMOVED OLD STYLES — No more references
    ======================================== */
 /* Removed: .kotak (floating box), old .typing, .change-color animation,

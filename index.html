@@ -30,14 +30,19 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-          <li class="nav-item"><a class="nav-link" href="#freelance">Freelance</a></li>
-          <li class="nav-item"><a class="nav-link" href="#file">File</a></li>
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home" data-translate="nav_home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-translate="nav_about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-translate="nav_experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery" data-translate="nav_gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project" data-translate="nav_project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#freelance" data-translate="nav_freelance">Freelance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#file" data-translate="nav_file">File</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="langSwitcher" class="btn-lang-toggle" aria-label="Toggle language">
+              <i class="fa-solid fa-globe"></i> <span id="currentLangText">EN</span>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -53,7 +58,7 @@
     <div class="container">
       <div class="row align-items-center" style="min-height: 100vh">
         <div class="col-lg-6 hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
+          <p class="hero-greeting" data-translate="hero_greeting">Hello, I'm</p>
           <h1 class="hero-name">
             Ahmad Khabib <span class="accent">Balloh</span>
           </h1>
@@ -61,13 +66,13 @@
             Fullstack <span class="typing-wrapper"><span class="typing-text" id="typingText"></span><span
                 class="cursor">|</span></span>
           </h2>
-          <p class="hero-desc">Passionate about building modern web applications and mobile experiences. Turning ideas
+          <p class="hero-desc" data-translate="hero_desc">Passionate about building modern web applications and mobile experiences. Turning ideas
             into impactful digital products.</p>
           <div class="hero-actions">
             <a href="https://wa.me/6287761666080" class="btn btn-primary-cta">
-              <i class="fa-brands fa-whatsapp me-2"></i> Let's Talk
+              <i class="fa-brands fa-whatsapp me-2"></i> <span data-translate="hero_cta_talk">Let's Talk</span>
             </a>
-            <a href="#project" class="btn btn-outline-cta">View Projects</a>
+            <a href="#project" class="btn btn-outline-cta" data-translate="hero_cta_projects">View Projects</a>
           </div>
           <div class="hero-socials">
             <a href="https://www.tiktok.com/@akb_1903" target="_blank" aria-label="TikTok"><i
@@ -106,8 +111,8 @@
     <section id="about" class="section about-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Get to Know Me</span>
-          <h2 class="section-title">About Me</h2>
+          <span class="section-tag" data-translate="about_tag">Get to Know Me</span>
+          <h2 class="section-title" data-translate="about_title">About Me</h2>
           <div class="section-line"></div>
         </div>
         <div class="row align-items-center g-5">
@@ -126,31 +131,31 @@
           </div>
           <div class="col-lg-6">
             <div class="about-tabs">
-              <button class="about-tab active" data-tab="info">Personal Info</button>
-              <button class="about-tab" data-tab="skills">Skills</button>
+              <button class="about-tab active" data-tab="info" data-translate="about_tab_info">Personal Info</button>
+              <button class="about-tab" data-tab="skills" data-translate="about_tab_skills">Skills</button>
             </div>
 
             <!-- Tab: Personal Info -->
             <div class="about-tab-content active" id="tab-info">
               <div class="info-grid">
                 <div class="info-item">
-                  <span class="info-label"><i class="fa-solid fa-user me-2"></i> Name</span>
+                  <span class="info-label"><i class="fa-solid fa-user me-2"></i> <span data-translate="about_label_name">Name</span></span>
                   <span class="info-value">Ahmad Khabib Balloh</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label"><i class="fa-solid fa-location-dot me-2"></i> Address</span>
+                  <span class="info-label"><i class="fa-solid fa-location-dot me-2"></i> <span data-translate="about_label_address">Address</span></span>
                   <span class="info-value">Jl Sastrorini, Ds. Purwokerto Kec. Ngadiluwih</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label"><i class="fa-solid fa-graduation-cap me-2"></i> Study Program</span>
-                  <span class="info-value">D3 Information Management</span>
+                  <span class="info-label"><i class="fa-solid fa-graduation-cap me-2"></i> <span data-translate="about_label_study">Study Program</span></span>
+                  <span class="info-value" data-translate="about_val_study">D3 Information Management</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label"><i class="fa-solid fa-building-columns me-2"></i> Campus</span>
+                  <span class="info-label"><i class="fa-solid fa-building-columns me-2"></i> <span data-translate="about_label_campus">Campus</span></span>
                   <span class="info-value">PSDKU Politeknik Negeri Malang</span>
                 </div>
                 <div class="info-item">
-                  <span class="info-label"><i class="fa-solid fa-phone me-2"></i> Phone</span>
+                  <span class="info-label"><i class="fa-solid fa-phone me-2"></i> <span data-translate="about_label_phone">Phone</span></span>
                   <span class="info-value">+62 877-6166-6080</span>
                 </div>
               </div>
@@ -189,8 +194,8 @@
     <section id="experience" class="section experience-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Career Journey</span>
-          <h2 class="section-title">Riwayat Kerja</h2>
+          <span class="section-tag" data-translate="experience_tag">Career Journey</span>
+          <h2 class="section-title" data-translate="experience_title">Riwayat Kerja</h2>
           <div class="section-line"></div>
         </div>
         <div class="timeline">
@@ -199,14 +204,14 @@
             <div class="timeline-year">2026</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i>Jan 2026 – Present</span>
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i><span data-translate="exp_date_madina">Jan 2026 – Present</span></span>
               <h3 class="timeline-company">Madina Mentari Teknologi</h3>
               <h4 class="timeline-role"><i class="fa-solid fa-code me-2"></i>Programmer</h4>
               <ul class="timeline-list">
-                <li>Analyzed system requirements to ensure alignment with company needs.</li>
-                <li>Developed features according to assigned tasks and delivered them on schedule.</li>
-                <li>Implemented features into the system using PHP and Vue.js.</li>
-                <li>Conducted bug testing and ensured the system met initial analysis requirements before delivery to the client.</li>
+                <li data-translate="exp_madina_1">Analyzed system requirements to ensure alignment with company needs.</li>
+                <li data-translate="exp_madina_2">Developed features according to assigned tasks and delivered them on schedule.</li>
+                <li data-translate="exp_madina_3">Implemented features into the system using PHP and Vue.js.</li>
+                <li data-translate="exp_madina_4">Conducted bug testing and ensured the system met initial analysis requirements before delivery to the client.</li>
               </ul>
             </div>
           </div>
@@ -215,14 +220,14 @@
             <div class="timeline-year">2025</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i>Dec 2025 – Present</span>
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i><span data-translate="exp_date_freelance">Dec 2025 – Present</span></span>
               <h3 class="timeline-company">Freelance</h3>
-              <h4 class="timeline-role"><i class="fa-solid fa-laptop-code me-2"></i>Freelance Mobile &amp; Web Developer</h4>
+              <h4 class="timeline-role"><i class="fa-solid fa-laptop-code me-2"></i><span data-translate="exp_role_freelance">Freelance Mobile &amp; Web Developer</span></h4>
               <ul class="timeline-list">
-                <li>Developed mobile applications and websites based on client requirements.</li>
-                <li>Integrated databases and APIs to support application functionality.</li>
-                <li>Performed testing, debugging, and performance optimization.</li>
-                <li>Conducted regular maintenance and periodic system updates.</li>
+                <li data-translate="exp_freelance_1">Developed mobile applications and websites based on client requirements.</li>
+                <li data-translate="exp_freelance_2">Integrated databases and APIs to support application functionality.</li>
+                <li data-translate="exp_freelance_3">Performed testing, debugging, and performance optimization.</li>
+                <li data-translate="exp_freelance_4">Conducted regular maintenance and periodic system updates.</li>
               </ul>
             </div>
           </div>
@@ -231,13 +236,13 @@
             <div class="timeline-year">2025</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i>Aug 2025 – Nov 2025</span>
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i><span data-translate="exp_date_medify">Aug 2025 – Nov 2025</span></span>
               <h3 class="timeline-company">Medify</h3>
               <h4 class="timeline-role"><i class="fa-solid fa-code me-2"></i>Programmer</h4>
               <ul class="timeline-list">
-                <li>Developed and enhanced a Hospital Information System (SIMRS) website.</li>
-                <li>Developed application modules including ALP (Assessment, Reporting, and Printout).</li>
-                <li>Built and implemented custom features based on system requirements.</li>
+                <li data-translate="exp_medify_1">Developed and enhanced a Hospital Information System (SIMRS) website.</li>
+                <li data-translate="exp_medify_2">Developed application modules including ALP (Assessment, Reporting, and Printout).</li>
+                <li data-translate="exp_medify_3">Built and implemented custom features based on system requirements.</li>
               </ul>
             </div>
           </div>
@@ -246,14 +251,14 @@
             <div class="timeline-year">2025</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i>Feb 2025 – Jun 2025</span>
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i><span data-translate="exp_date_candratama">Feb 2025 – Jun 2025</span></span>
               <h3 class="timeline-company">PT Candratama Granites</h3>
-              <h4 class="timeline-role"><i class="fa-solid fa-mobile-screen me-2"></i>Mobile Developer Intern</h4>
+              <h4 class="timeline-role"><i class="fa-solid fa-mobile-screen me-2"></i><span data-translate="exp_role_candratama">Mobile Developer Intern</span></h4>
               <ul class="timeline-list">
-                <li>Analyzed system requirements to ensure alignment with company needs.</li>
-                <li>Designed mobile application interfaces using Figma.</li>
-                <li>Implemented UI designs into mobile applications using Dart and the Flutter framework.</li>
-                <li>Conducted bug testing to ensure the application met initial system analysis requirements.</li>
+                <li data-translate="exp_candratama_1">Analyzed system requirements to ensure alignment with company needs.</li>
+                <li data-translate="exp_candratama_2">Designed mobile application interfaces using Figma.</li>
+                <li data-translate="exp_candratama_3">Implemented UI designs into mobile applications using Dart and the Flutter framework.</li>
+                <li data-translate="exp_candratama_4">Conducted bug testing to ensure the application met initial system analysis requirements.</li>
               </ul>
             </div>
           </div>
@@ -262,14 +267,14 @@
             <div class="timeline-year">2024</div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i>Jun 2024 – Aug 2024</span>
+              <span class="timeline-date"><i class="fa-solid fa-calendar-days me-2"></i><span data-translate="exp_date_ziho">Jun 2024 – Aug 2024</span></span>
               <h3 class="timeline-company">LPSK Ziho Karya Jayati</h3>
-              <h4 class="timeline-role"><i class="fa-solid fa-globe me-2"></i>Web Developer Intern</h4>
+              <h4 class="timeline-role"><i class="fa-solid fa-globe me-2"></i><span data-translate="exp_role_ziho">Web Developer Intern</span></h4>
               <ul class="timeline-list">
-                <li>Designed application interfaces based on company requirements.</li>
-                <li>Implemented UI designs into the web system using PHP and the Laravel framework.</li>
-                <li>Conducted bug testing and DevOps processes to ensure the system was ready for company use.</li>
-                <li>Implemented basic SEO optimization for the website.</li>
+                <li data-translate="exp_ziho_1">Designed application interfaces based on company requirements.</li>
+                <li data-translate="exp_ziho_2">Implemented UI designs into the web system using PHP and the Laravel framework.</li>
+                <li data-translate="exp_ziho_3">Conducted bug testing and DevOps processes to ensure the system was ready for company use.</li>
+                <li data-translate="exp_ziho_4">Implemented basic SEO optimization for the website.</li>
               </ul>
             </div>
           </div>
@@ -281,8 +286,8 @@
     <section id="gallery" class="section gallery-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Achievements</span>
-          <h2 class="section-title">Gallery</h2>
+          <span class="section-tag" data-translate="gallery_tag">Achievements</span>
+          <h2 class="section-title" data-translate="gallery_title">Gallery</h2>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
@@ -290,8 +295,8 @@
             <div class="gallery-card">
               <div class="gallery-photo photo-1"></div>
               <div class="gallery-overlay">
-                <span class="gallery-tag-label">Bootcamp</span>
-                <h5>First Certificate</h5>
+                <span class="gallery-tag-label" data-translate="gallery_tag_bootcamp">Bootcamp</span>
+                <h5 data-translate="gallery_title_1">First Certificate</h5>
               </div>
             </div>
           </div>
@@ -299,8 +304,8 @@
             <div class="gallery-card">
               <div class="gallery-photo photo-2"></div>
               <div class="gallery-overlay">
-                <span class="gallery-tag-label">Bootcamp</span>
-                <h5>Second Certificate</h5>
+                <span class="gallery-tag-label" data-translate="gallery_tag_bootcamp">Bootcamp</span>
+                <h5 data-translate="gallery_title_2">Second Certificate</h5>
               </div>
             </div>
           </div>
@@ -308,8 +313,8 @@
             <div class="gallery-card">
               <div class="gallery-photo photo-3"></div>
               <div class="gallery-overlay">
-                <span class="gallery-tag-label">Bootcamp</span>
-                <h5>Third Certificate</h5>
+                <span class="gallery-tag-label" data-translate="gallery_tag_bootcamp">Bootcamp</span>
+                <h5 data-translate="gallery_title_3">Third Certificate</h5>
               </div>
             </div>
           </div>
@@ -317,8 +322,8 @@
             <div class="gallery-card">
               <div class="gallery-photo photo-4"></div>
               <div class="gallery-overlay">
-                <span class="gallery-tag-label">Internship</span>
-                <h5>Fourth Certificate</h5>
+                <span class="gallery-tag-label" data-translate="gallery_tag_intern">Internship</span>
+                <h5 data-translate="gallery_title_4">Fourth Certificate</h5>
               </div>
             </div>
           </div>
@@ -326,8 +331,8 @@
             <div class="gallery-card">
               <div class="gallery-photo photo-5"></div>
               <div class="gallery-overlay">
-                <span class="gallery-tag-label">Olympiad 2020</span>
-                <h5>Fifth Certificate</h5>
+                <span class="gallery-tag-label" data-translate="gallery_tag_olympiad">Olympiad 2020</span>
+                <h5 data-translate="gallery_title_5">Fifth Certificate</h5>
               </div>
             </div>
           </div>
@@ -339,8 +344,8 @@
     <section id="project" class="section project-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">My Work</span>
-          <h2 class="section-title">Learning Projects</h2>
+          <span class="section-tag" data-translate="project_tag">My Work</span>
+          <h2 class="section-title" data-translate="project_title">Learning Projects</h2>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
@@ -350,7 +355,7 @@
                 <div class="project-thumb project-1"></div>
                 <div class="project-info">
                   <span class="project-badge">Web</span>
-                  <h5>Wedding Invitation</h5>
+                  <h5 data-translate="project_title_1">Wedding Invitation</h5>
                 </div>
               </div>
             </a>
@@ -361,7 +366,7 @@
                 <div class="project-thumb project-2"></div>
                 <div class="project-info">
                   <span class="project-badge">Mobile</span>
-                  <h5>Inventory Mobile</h5>
+                  <h5 data-translate="project_title_2">Inventory Mobile</h5>
                 </div>
               </div>
             </a>
@@ -372,7 +377,7 @@
                 <div class="project-thumb project-3"></div>
                 <div class="project-info">
                   <span class="project-badge">Web</span>
-                  <h5>LPKS ZIHO</h5>
+                  <h5 data-translate="project_title_3">LPKS ZIHO</h5>
                 </div>
               </div>
             </a>
@@ -383,7 +388,7 @@
                 <div class="project-thumb project-4"></div>
                 <div class="project-info">
                   <span class="project-badge">Web</span>
-                  <h5>Inventory Website</h5>
+                  <h5 data-translate="project_title_4">Inventory Website</h5>
                 </div>
               </div>
             </a>
@@ -394,7 +399,7 @@
                 <div class="project-thumb project-5"></div>
                 <div class="project-info">
                   <span class="project-badge">Web</span>
-                  <h5>Letter Archive</h5>
+                  <h5 data-translate="project_title_5">Letter Archive</h5>
                 </div>
               </div>
             </a>
@@ -404,7 +409,7 @@
               <div class="project-thumb project-6"></div>
               <div class="project-info">
                 <span class="project-badge">Web</span>
-                <h5>Inventory of Goods and Rooms</h5>
+                <h5 data-translate="project_title_6">Inventory of Goods and Rooms</h5>
               </div>
             </div>
           </div>
@@ -414,7 +419,7 @@
                 <div class="project-thumb project-7"></div>
                 <div class="project-info">
                   <span class="project-badge">Mobile</span>
-                  <h5>Interior Calculation App</h5>
+                  <h5 data-translate="project_title_7">Interior Calculation App</h5>
                 </div>
               </div>
             </a>
@@ -425,7 +430,7 @@
                 <div class="project-thumb project-8"></div>
                 <div class="project-info">
                   <span class="project-badge">Mobile</span>
-                  <h5>Pet App</h5>
+                  <h5 data-translate="project_title_8">Pet App</h5>
                 </div>
               </div>
             </a>
@@ -438,8 +443,8 @@
     <section id="freelance" class="section freelance-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Client Work</span>
-          <h2 class="section-title">Project Freelance</h2>
+          <span class="section-tag" data-translate="freelance_tag">Client Work</span>
+          <h2 class="section-title" data-translate="freelance_title">Project Freelance</h2>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
@@ -450,7 +455,7 @@
                 <div class="project-thumb freelance-1"></div>
                 <div class="project-info">
                   <span class="project-badge freelance-badge">Freelance</span>
-                  <h5>Posyandu</h5>
+                  <h5 data-translate="freelance_title_1">Posyandu</h5>
                 </div>
               </div>
             </a>
@@ -461,7 +466,7 @@
                 <div class="project-thumb freelance-2"></div>
                 <div class="project-info">
                   <span class="project-badge freelance-badge">Freelance</span>
-                  <h5>Pengajuan KP</h5>
+                  <h5 data-translate="freelance_title_2">Pengajuan KP</h5>
                 </div>
               </div>
             </a>
@@ -471,7 +476,7 @@
               <div class="project-thumb freelance-3"></div>
               <div class="project-info">
                 <span class="project-badge freelance-badge">Freelance</span>
-                <h5>Otaku Store</h5>
+                <h5 data-translate="freelance_title_3">Otaku Store</h5>
               </div>
             </div>
           </div>
@@ -483,8 +488,8 @@
     <section id="file" class="section file-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Documents</span>
-          <h2 class="section-title">My Files</h2>
+          <span class="section-tag" data-translate="file_tag">Documents</span>
+          <h2 class="section-title" data-translate="file_title">My Files</h2>
           <div class="section-line"></div>
         </div>
         <div class="row g-4">
@@ -494,9 +499,9 @@
                 <i class="fa-solid fa-file-pdf"></i>
               </div>
               <h5>Curriculum Vitae</h5>
-              <p>My CV as a fullstack web developer. I've been interested in coding since college and want to deepen
+              <p data-translate="file_desc">My CV as a fullstack web developer. I've been interested in coding since college and want to deepen
                 my knowledge.</p>
-              <span class="file-action"><i class="fa-solid fa-arrow-down me-1"></i> View Document</span>
+              <span class="file-action"><i class="fa-solid fa-arrow-down me-1"></i> <span data-translate="file_btn">View Document</span></span>
             </div>
             <div class="collapse" id="cvCollapse">
               <div class="file-viewer">
@@ -517,22 +522,22 @@
           <div class="col-lg-4">
             <div class="footer-brand">
               <h4><span class="logo-bracket"><</span>Khabib<span class="logo-bracket"> /></span></h4>
-              <p>Fullstack Web & Android Developer passionate about creating modern digital experiences.</p>
+              <p data-translate="footer_desc">Fullstack Web & Android Developer passionate about creating modern digital experiences.</p>
             </div>
           </div>
           <div class="col-lg-4">
-            <h5 class="footer-heading">Quick Links</h5>
+            <h5 class="footer-heading" data-translate="footer_quick_links">Quick Links</h5>
             <div class="footer-links">
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#experience">Experience</a>
-              <a href="#gallery">Gallery</a>
-              <a href="#project">Projects</a>
-              <a href="#file">Files</a>
+              <a href="#home" data-translate="nav_home">Home</a>
+              <a href="#about" data-translate="nav_about">About</a>
+              <a href="#experience" data-translate="nav_experience">Experience</a>
+              <a href="#gallery" data-translate="nav_gallery">Gallery</a>
+              <a href="#project" data-translate="nav_project">Projects</a>
+              <a href="#file" data-translate="nav_file">Files</a>
             </div>
           </div>
           <div class="col-lg-4">
-            <h5 class="footer-heading">Connect</h5>
+            <h5 class="footer-heading" data-translate="footer_connect">Connect</h5>
             <div class="footer-socials">
               <a href="https://www.tiktok.com/@akb_1903" target="_blank" aria-label="TikTok"><i
                   class="fa-brands fa-tiktok"></i></a>
@@ -546,11 +551,12 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Ahmad Khabib Balloh. All rights reserved.</p>
+        <p data-translate="footer_copyright">&copy; 2026 Ahmad Khabib Balloh. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
